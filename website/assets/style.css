@@ -154,6 +154,7 @@ h1 {
 .hero-duo { display: grid; width: min(440px, 90vw); }
 .hero-duo .phone {
   grid-area: 1 / 1;
+  align-self: start;
   width: 62%;
   border: 8px solid #15181d;
   border-radius: 42px;
