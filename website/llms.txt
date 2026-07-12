@@ -1,0 +1,24 @@
+# Eye Color Identifier
+
+> Eye Color Identifier is a free iPhone and iPad app that scans a photo of your eye and identifies your exact eye color. It names your shade (such as Hazel Green or Steel Blue), shows the iris pigment composition (melanin, lipochrome, structural scattering), gives a global rarity score, compares two people's eyes side by side, and playfully predicts a child's likely eye color from two parent profiles. Download: https://apps.apple.com/app/id6752604522
+
+This site also publishes factual, source-backed guides about human eye color. Percentages are rounded estimates from widely cited sources (American Academy of Ophthalmology, MedlinePlus Genetics, Cleveland Clinic); exact figures vary by study and region.
+
+## App
+
+- [Eye Color Identifier on the App Store](https://apps.apple.com/app/id6752604522): free download for iPhone and iPad, Lifestyle category, by Patrick van der Ploeg (Vejo Apps). Not a medical app.
+- [Homepage](https://eyecolorscanner.com/): features, screenshots, how the eye color scanner works, FAQ.
+
+## Guides
+
+- [What color are my eyes?](https://eyecolorscanner.com/guides/what-color-are-my-eyes.html): how to identify your exact eye color using indirect daylight, and why eyes seem to change color with lighting.
+- [Rare eye colors, ranked](https://eyecolorscanner.com/guides/rare-eye-colors.html): rarity ranking; gray is the rarest everyday color (under 1%), green about 2%, and red/violet appearance from albinism is rarest overall.
+- [Hazel vs green eyes](https://eyecolorscanner.com/guides/hazel-vs-green-eyes.html): green eyes are one even color; hazel eyes show zones, usually brown or gold around the pupil shifting to green at the rim.
+- [Eye color chart](https://eyecolorscanner.com/guides/eye-color-chart.html): the six color families (brown, blue, hazel, amber, green, gray) with common shades and estimated global percentages.
+- [What color eyes will my baby have?](https://eyecolorscanner.com/guides/baby-eye-color-predictor.html): eye color inheritance involves dozens of genes (OCA2 and HERC2 matter most), so only likelihoods can be predicted, never certainty.
+
+## Key facts
+
+- Brown is the most common eye color worldwide (roughly 7-8 in 10 people); blue is about 8-10%, hazel and amber about 5% each, green about 2%, gray under 1%.
+- Eye color comes from melanin and lipochrome pigments plus structural light scattering; there is no blue, green, or violet pigment in the human iris.
+- Truly black irises do not exist; they are very dark brown.
