@@ -1,0 +1,9 @@
+{
+  "name": "eye-color-identifier-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static marketing website for the Eye Color Identifier iOS app",
+  "scripts": {
+    "dev": "npx -y serve website -l 3000"
+  }
+}
