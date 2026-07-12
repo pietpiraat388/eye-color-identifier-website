@@ -20,7 +20,8 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000.
 
-## Custom domain
+## Domain
 
-Canonical URLs, Open Graph URLs, `sitemap.xml`, and `robots.txt` currently point to the GitHub Pages URL.
-If a custom domain is attached later, search-replace `https://pietpiraat388.github.io/eye-color-identifier-website` with the new origin and add a `CNAME` file to `website/`.
+The primary domain is https://eyecolorscanner.com (served via Vercel, see `vercel.json`).
+All canonical URLs, Open Graph URLs, `sitemap.xml`, and `robots.txt` point to that origin.
+The GitHub Pages deploy (`.github/workflows/deploy-pages.yml`) is a secondary mirror; its canonicals also point to eyecolorscanner.com, so it does not compete in search.

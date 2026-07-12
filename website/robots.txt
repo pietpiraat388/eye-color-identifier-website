@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pietpiraat388.github.io/eye-color-identifier-website/sitemap.xml
+Sitemap: https://eyecolorscanner.com/sitemap.xml
