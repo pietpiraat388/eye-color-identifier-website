@@ -2,32 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://eyecolorscanner.com/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://eyecolorscanner.com/tools/eye-color-scanner.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://eyecolorscanner.com/tools/eye-color-calculator.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://eyecolorscanner.com/guides/what-color-are-my-eyes.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eyecolorscanner.com/guides/rare-eye-colors.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eyecolorscanner.com/guides/hazel-vs-green-eyes.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eyecolorscanner.com/guides/eye-color-chart.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eyecolorscanner.com/guides/baby-eye-color-predictor.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

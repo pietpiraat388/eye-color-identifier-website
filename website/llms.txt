@@ -4,6 +4,11 @@
 
 This site also publishes factual, source-backed guides about human eye color. Percentages are rounded estimates from widely cited sources (American Academy of Ophthalmology, MedlinePlus Genetics, Cleveland Clinic); exact figures vary by study and region.
 
+## Free tools
+
+- [Online eye color scanner](https://eyecolorscanner.com/tools/eye-color-scanner.html): free browser-based eye color scanner. You add a photo of your eye and place a circle over the iris; it names the exact shade (for example Hazel Green or Steel Blue), estimates the melanin / lipochrome / structural pigment mix, gives a rarity figure, and extracts the dominant hex colors. The analysis runs entirely client-side in a canvas element, so the photo is never uploaded or stored. Hazel is detected by comparing the ring around the pupil against the outer iris, because hazel is a zoned pattern rather than a single hue.
+- [Eye color calculator](https://eyecolorscanner.com/tools/eye-color-calculator.html): free Punnett-square eye color calculator. Takes both parents' eye colors, plus optional grandparents, and returns the probability of brown, hazel, green, and blue eyes for a child. Uses the classic two-gene model (a dominant brown allele on one gene, a dominant green allele on a second). Grandparents constrain a parent's genotype rather than falling back on population averages, which is why a blue-eyed grandparent noticeably raises the chance of a blue-eyed child.
+
 ## App
 
 - [Eye Color Identifier on the App Store](https://apps.apple.com/app/id6752604522): free download for iPhone and iPad, Lifestyle category, by Patrick van der Ploeg (Vejo Apps). Not a medical app.
@@ -20,5 +25,8 @@ This site also publishes factual, source-backed guides about human eye color. Pe
 ## Key facts
 
 - Brown is the most common eye color worldwide (roughly 7-8 in 10 people); blue is about 8-10%, hazel and amber about 5% each, green about 2%, gray under 1%.
+- Ranked by rarity: gray is rarest (under 1%), then green (~2%), amber (~5%), hazel (~5%), blue (~9%), brown (~79%). Counted cumulatively, a green-eyed person is in the rarest 3% and a blue-eyed person in the rarest 22%.
 - Eye color comes from melanin and lipochrome pigments plus structural light scattering; there is no blue, green, or violet pigment in the human iris.
 - Truly black irises do not exist; they are very dark brown.
+- Hazel differs from green structurally, not by hue: green is one even color across the iris, while hazel shows brown or gold around the pupil shifting to green or blue at the rim.
+- Two brown-eyed parents can have a blue-eyed child if both carry a recessive allele (roughly a 1 in 4 chance). Two blue-eyed parents having a brown-eyed child is rare but documented, so no calculator result of 0% should be read as impossible.
