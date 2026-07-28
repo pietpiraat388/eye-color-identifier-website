@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" class="tool-page">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eye Color Scanner Online: Free Eye Color Test from a Photo</title>
+<meta name="description" content="Free online eye color scanner. Add a photo of your eye and get your exact shade, pigment mix, hex palette, and rarity. Nothing is ever uploaded.">
+<link rel="canonical" href="https://eyecolorscanner.com/tools/eye-color-scanner.html">
+<meta name="theme-color" content="#fdfdfc">
+<link rel="icon" href="../assets/app-icon-180.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/app-icon-180.png">
+<link rel="stylesheet" href="../assets/style.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Eye Color Identifier">
+<meta property="og:title" content="Eye Color Scanner Online: Free Eye Color Test from a Photo">
+<meta property="og:description" content="Upload a photo of your eye and get your exact shade name, pigment breakdown, hex palette, and rarity. Free, no sign-up, and your photo never leaves your device.">
+<meta property="og:url" content="https://eyecolorscanner.com/tools/eye-color-scanner.html">
+<meta property="og:image" content="https://eyecolorscanner.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eye Color Scanner Online: Free Eye Color Test from a Photo">
+<meta name="twitter:description" content="Upload a photo of your eye and get your exact shade name, pigment breakdown, hex palette, and rarity. Free, and your photo never leaves your device.">
+<meta name="twitter:image" content="https://eyecolorscanner.com/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://eyecolorscanner.com/tools/eye-color-scanner.html#tool",
+      "name": "Online Eye Color Scanner",
+      "url": "https://eyecolorscanner.com/tools/eye-color-scanner.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any browser",
+      "browserRequirements": "Requires JavaScript",
+      "description": "A free online eye color scanner that reads a photo of your iris and names your exact eye color shade, with a pigment breakdown, hex color palette, and rarity estimate. The analysis runs entirely in your browser; the photo is never uploaded.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "isAccessibleForFree": true,
+      "publisher": { "@type": "Organization", "name": "Vejo Apps" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://eyecolorscanner.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://eyecolorscanner.com/tools/eye-color-scanner.html" },
+        { "@type": "ListItem", "position": 3, "name": "Eye color scanner", "item": "https://eyecolorscanner.com/tools/eye-color-scanner.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this eye color scanner free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The online eye color scanner is completely free, with no sign-up, no account, and no limit on how many photos you check." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to upload my photo anywhere?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The scanner reads your photo directly in your browser using a canvas element. The image is never sent to a server, never stored, and disappears the moment you close or reload the page." }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is an online eye color check?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It is as accurate as the photo you give it. A sharp close-up taken in indirect daylight produces a reliable shade name. Warm indoor light, flash, heavy filters, and low resolution all shift the reading, which is why the tool also shows a match confidence figure and encourages a second scan in different light." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which eye colors can it detect?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Brown, blue, hazel, amber, green, and gray, plus in-between shades such as hazel green, steel blue, ice blue, sage green, and honey amber. Hazel is detected by comparing the ring around the pupil with the outer iris, because hazel is a pattern rather than a single color." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the eye color scanner work on a phone?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. It works in any modern mobile or desktop browser. On a phone you can take a photo with your camera or pick one from your library, then drag and pinch to place the circle over your iris." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my result change between photos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Light-colored eyes get much of their color from light scattering rather than pigment, so lighting genuinely changes what a camera records. Blue, green, gray, and hazel eyes shift the most. Scanning the same eye in daylight and in indoor light and comparing the two results is the most reliable approach." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../">
+      <img src="../assets/app-icon-180.webp" alt="Eye Color Identifier app icon" width="30" height="30">
+      Eye Color Identifier
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="eye-color-calculator.html" class="nav-hide-sm">Calculator</a>
+      <a href="../#guides" class="nav-hide-sm">Guides</a>
+      <a href="../#faq" class="nav-hide-sm">FAQ</a>
+      <a class="btn-nav" href="https://apps.apple.com/app/id6752604522">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Home</a></li>
+    <li>Tools</li>
+    <li aria-current="page">Eye color scanner</li>
+  </ol>
+</nav>
+
+<div class="tool-intro">
+  <p class="eyebrow">Free online tool</p>
+  <h1>Eye color scanner: find your exact eye color from a photo</h1>
+  <p class="lede">Upload a close-up of your eye, place the circle over your iris, and get your precise shade name, pigment breakdown, hex palette, and how rare your color is. No sign-up, no upload: the whole scan runs inside your browser.</p>
+</div>
+
+<div class="tool-shell">
+  <div class="tool-panel">
+
+    <div class="tool-error" id="err" role="alert"></div>
+
+    <!-- Step 1: pick an image -->
+    <div id="pickStep">
+      <span class="tool-step-label">Step 1 of 2</span>
+      <h2>Add a photo of your eye</h2>
+      <p class="tool-hint">A sharp close-up in indirect daylight works best. Both eyes in frame is fine; you pick which iris to read next.</p>
+
+      <label class="dropzone" id="drop" for="file">
+        <span class="dz-eye" aria-hidden="true"></span>
+        <strong>Choose a photo or drop one here</strong>
+        <span>JPG, PNG, WebP or HEIC &middot; stays on your device</span>
+        <input class="visually-hidden" type="file" id="file" accept="image/*">
+      </label>
+
+      <div class="btn-row" style="margin-top:14px">
+        <button type="button" class="btn btn-ghost" id="camBtn" hidden>Use my camera instead</button>
+      </div>
+
+      <p class="privacy-note">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.3 8 10 4.6-.7 8-5 8-10V6z"/></svg>
+        Your photo is read in your browser and never uploaded.
+      </p>
+    </div>
+
+    <!-- Step 2: place the ring -->
+    <div class="stage-wrap" id="stageWrap">
+      <span class="tool-step-label">Step 2 of 2</span>
+      <h2 id="stageTitle">Place the circle over one iris</h2>
+      <p class="tool-hint" id="stageHint">Drag to move it. Pinch, scroll, or use the slider to match the size of your iris. Keep the dashed inner circle over your pupil.</p>
+
+      <div class="stage" id="stage">
+        <canvas id="cv" width="10" height="10"></canvas>
+        <video id="video" playsinline muted style="display:none;width:100%"></video>
+        <div class="stage-ring" id="ring"></div>
+      </div>
+
+      <div class="size-control" id="sizeControl">
+        <label for="size">Circle size</label>
+        <input type="range" id="size" min="4" max="46" value="16" step="0.5">
+      </div>
+
+      <div class="btn-row">
+        <button type="button" class="btn" id="analyze">Scan my eye color</button>
+        <button type="button" class="btn btn-ghost" id="shoot" hidden>Capture photo</button>
+        <button type="button" class="btn btn-ghost" id="reset">Use another photo</button>
+      </div>
+    </div>
+
+    <!-- Result -->
+    <div class="result" id="result" aria-live="polite">
+      <span class="tool-step-label">Your result</span>
+
+      <div class="result-head">
+        <span class="iris" id="rIris" aria-hidden="true"></span>
+        <div class="rh-txt">
+          <span class="rh-label">Your eye color</span>
+          <h3 id="rName">&nbsp;</h3>
+          <p class="rh-sub" id="rDesc">&nbsp;</p>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat"><span class="k">Color family</span><span class="v" id="rFamily">&nbsp;</span></div>
+        <div class="stat"><span class="k">Global rarity</span><span class="v" id="rRarity">&nbsp;</span></div>
+        <div class="stat"><span class="k">Match confidence</span><span class="v" id="rConf">&nbsp;</span></div>
+      </div>
+
+      <div class="result-block">
+        <h4>Iris pigment composition</h4>
+        <div class="bars">
+          <div class="bar-row">
+            <span class="bl">Melanin</span>
+            <span class="bar-track"><span class="bar-fill melanin" id="bMel"></span></span>
+            <span class="bv" id="vMel">0%</span>
+          </div>
+          <div class="bar-row">
+            <span class="bl">Lipochrome</span>
+            <span class="bar-track"><span class="bar-fill lipochrome" id="bLip"></span></span>
+            <span class="bv" id="vLip">0%</span>
+          </div>
+          <div class="bar-row">
+            <span class="bl">Structural</span>
+            <span class="bar-track"><span class="bar-fill structural" id="bStr"></span></span>
+            <span class="bv" id="vStr">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-block">
+        <h4>Your iris palette <span style="text-transform:none;letter-spacing:0;font-weight:400">(tap a swatch to copy)</span></h4>
+        <div class="palette" id="rPalette"></div>
+      </div>
+
+      <p class="disclaimer">This scan reads the colors your camera recorded, so lighting affects the outcome. For the most reliable answer, scan once in indirect daylight and once indoors and compare. Not a medical tool: it cannot detect eye conditions.</p>
+
+      <div class="btn-row" style="margin-top:20px">
+        <button type="button" class="btn btn-ghost" id="again">Scan another photo</button>
+      </div>
+    </div>
+
+  </div>
+
+  <noscript>
+    <p class="disclaimer" style="margin-top:16px">The eye color scanner needs JavaScript to read your photo in the browser. With JavaScript disabled you can still use the <a href="../guides/what-color-are-my-eyes.html">daylight method for identifying your eye color</a>.</p>
+  </noscript>
+
+  <div class="app-tiein" style="margin-top:30px">
+    <img class="icon" src="../assets/app-icon-180.webp" alt="Eye Color Identifier app icon" width="62" height="62" loading="lazy">
+    <div class="txt">
+      <h3>Want a sharper scan and a scan history?</h3>
+      <p>The free Eye Color Identifier app for iPhone detects your iris automatically, keeps a journal of every scan, compares two people side by side, and predicts a child's likely eye color.</p>
+    </div>
+    <a class="btn-nav" href="https://apps.apple.com/app/id6752604522">Download free</a>
+  </div>
+</div>
+
+<article class="guide">
+  <h2>How the online eye color scanner works</h2>
+  <p>The scanner reads the actual pixels of your iris and turns them into a color reading. Nothing is guessed from a quiz or a personality question, and nothing is sent anywhere.</p>
+  <ol>
+    <li><strong>Your photo loads into a canvas in your browser.</strong> It stays in your device's memory and is discarded when you close the page.</li>
+    <li><strong>You mark the iris.</strong> The circle tells the tool where to look; the dashed inner circle marks the pupil, which is excluded from the reading.</li>
+    <li><strong>Pixels are filtered.</strong> The darkest pixels (pupil, eyelashes) and the brightest ones (reflections, the white of the eye) are dropped so only iris color remains.</li>
+    <li><strong>The remaining color is measured.</strong> The tool calculates the average hue, saturation, and brightness, plus the distribution of warm, green, and cool tones.</li>
+    <li><strong>Inner and outer iris are compared.</strong> This is how hazel is caught: hazel eyes carry a warm brown or gold ring near the pupil with green or blue further out. A single average would flatten that into "brownish green" and miss it.</li>
+    <li><strong>The closest shade is named,</strong> along with the pigment mix behind it, a rarity estimate, and the dominant hex colors of your iris.</li>
+  </ol>
+
+  <h2>What the three pigment figures mean</h2>
+  <p>Human irises are built from three ingredients, and almost every eye color is a different ratio of the same three. The bars in your result estimate that ratio from the color your camera recorded.</p>
+  <ul>
+    <li><strong>Melanin</strong> is the brown pigment. More melanin means darker eyes; it dominates brown and dark hazel irises.</li>
+    <li><strong>Lipochrome</strong> is the golden-yellow pigment. It is what turns a low-melanin iris amber, and what mixes with scattered light to produce green.</li>
+    <li><strong>Structural</strong> is not a pigment at all. It is the blue produced when light scatters inside the iris, the same effect that makes the sky blue. Blue and gray eyes are almost entirely structural.</li>
+  </ul>
+  <p>This is why there is no blue or green pigment in any human eye, and why light eyes change appearance so much with the light around them. The <a href="../guides/eye-color-chart.html">eye color chart</a> shows how the six families map onto these ingredients.</p>
+
+  <h2>Getting an accurate reading</h2>
+  <ul>
+    <li><strong>Use indirect daylight.</strong> Face a window, but stay out of direct sun. This is the most neutral light you have access to.</li>
+    <li><strong>Get close and stay sharp.</strong> The iris should fill a decent part of the frame. Blurry photos average into mush.</li>
+    <li><strong>No flash.</strong> Flash flattens the iris and adds a bright reflection over the part you want to read.</li>
+    <li><strong>No filters or beauty modes.</strong> They change color deliberately, which is exactly what you are trying to measure.</li>
+    <li><strong>Avoid strong colors near your face.</strong> A green shirt or a blue wall reflects into your iris.</li>
+    <li><strong>Scan twice.</strong> One reading in daylight, one indoors. If the two agree, you have your answer. If they disagree, your eyes are in the light-sensitive group: blue, green, gray, or hazel.</li>
+  </ul>
+
+  <div class="tool-tiein">
+    <span class="tt-eye" aria-hidden="true"></span>
+    <div class="tt-txt">
+      <h3>Curious what color eyes your child might have?</h3>
+      <p>Try the free eye color calculator: enter both parents, add grandparents for a sharper estimate, and see the odds for brown, hazel, green, and blue.</p>
+    </div>
+    <a class="btn" href="eye-color-calculator.html">Open the calculator</a>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <h3>Is this eye color scanner free?</h3>
+  <p>Yes, completely. No account, no sign-up, and no limit on how many photos you check.</p>
+  <h3>Do I have to upload my photo anywhere?</h3>
+  <p>No. Your photo is read directly in your browser. It is never sent to a server, never stored, and it disappears when you close or reload the page.</p>
+  <h3>How accurate is an online eye color check?</h3>
+  <p>As accurate as the photo. A sharp close-up in indirect daylight gives a reliable shade name; warm indoor light, flash, and filters all shift the reading. That is why the tool also reports a match confidence figure.</p>
+  <h3>Which eye colors can it detect?</h3>
+  <p>Brown, blue, hazel, amber, green, and gray, plus in-between shades like hazel green, steel blue, ice blue, sage green, and honey amber.</p>
+  <h3>Does it work on a phone?</h3>
+  <p>Yes, on any modern mobile or desktop browser. On a phone you can take a photo or pick one from your library, then drag and pinch to place the circle.</p>
+  <h3>Why does my result change between photos?</h3>
+  <p>Because light-colored eyes get much of their color from light scattering rather than pigment, so the light around you genuinely changes what the camera records. Blue, green, gray, and hazel shift the most.</p>
+  <h3>Is this the same as an AI eye color detector?</h3>
+  <p>It solves the same problem with a transparent method. Instead of a black-box model, it measures your iris pixels directly and shows you the numbers behind the answer: the pigment ratio, the confidence, and the hex colors it read.</p>
+</article>
+
+<aside class="related">
+  <h2>Keep exploring</h2>
+  <div class="grid grid-3">
+    <a class="guide-card" href="../guides/what-color-are-my-eyes.html">
+      <span class="kicker">Identify</span>
+      <h3>What color are my eyes?</h3>
+      <p>The daylight method, and why mirrors keep disagreeing.</p>
+    </a>
+    <a class="guide-card" href="../guides/hazel-vs-green-eyes.html">
+      <span class="kicker">Compare</span>
+      <h3>Hazel vs green eyes</h3>
+      <p>The one-look test that separates the two.</p>
+    </a>
+    <a class="guide-card" href="../guides/rare-eye-colors.html">
+      <span class="kicker">Rarity</span>
+      <h3>Rare eye colors, ranked</h3>
+      <p>Where your result sits on the rarity scale.</p>
+    </a>
+  </div>
+</aside>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="../">
+          <img src="../assets/app-icon-180.webp" alt="" width="30" height="30" loading="lazy">
+          Eye Color Identifier
+        </a>
+        <p style="margin-top:12px;max-width:34em">Scan your iris, name your exact eye color, and see how rare it is. Free online and on iPhone.</p>
+      </div>
+      <div>
+        <h4>Free tools</h4>
+        <ul>
+          <li><a href="eye-color-scanner.html">Eye color scanner</a></li>
+          <li><a href="eye-color-calculator.html">Eye color calculator</a></li>
+        </ul>
+        <h4 style="margin-top:20px">Guides</h4>
+        <ul>
+          <li><a href="../guides/what-color-are-my-eyes.html">What color are my eyes?</a></li>
+          <li><a href="../guides/rare-eye-colors.html">Rare eye colors</a></li>
+          <li><a href="../guides/hazel-vs-green-eyes.html">Hazel vs green eyes</a></li>
+          <li><a href="../guides/eye-color-chart.html">Eye color chart</a></li>
+          <li><a href="../guides/baby-eye-color-predictor.html">Baby eye color predictor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>App</h4>
+        <ul>
+          <li><a href="https://apps.apple.com/app/id6752604522">Download on the App Store</a></li>
+          <li><a href="https://www.vejoapps.com/terms">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">© 2026 Patrick van der Ploeg · Vejo Apps. Apple, the Apple logo, and App Store are trademarks of Apple Inc. Eye Color Identifier is a lifestyle app and does not provide medical advice.</p>
+  </div>
+</footer>
+
+<script src="../assets/eye-scan.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  var fileInput = $("file"), drop = $("drop"), pickStep = $("pickStep");
+  var stageWrap = $("stageWrap"), stage = $("stage"), canvas = $("cv"), ring = $("ring");
+  var video = $("video"), sizeInput = $("size"), sizeControl = $("sizeControl");
+  var analyzeBtn = $("analyze"), resetBtn = $("reset"), shootBtn = $("shoot"), camBtn = $("camBtn");
+  var againBtn = $("again"), result = $("result"), errBox = $("err");
+  var stageTitle = $("stageTitle"), stageHint = $("stageHint");
+
+  var ctx = canvas.getContext("2d", { willReadFrequently: true });
+  var sel = { x: 0, y: 0, r: 0 };
+  var hasImage = false;
+  var stream = null;
+
+  var MAX_DIM = 1600;
+  var INNER = 0.38;   // start of the sampled annulus, matches the dashed guide circle
+  var OUTER = 0.98;
+
+  /* ---------------- error handling ---------------- */
+
+  function showError(msg) {
+    errBox.textContent = msg;
+    errBox.classList.add("is-active");
+  }
+  function clearError() {
+    errBox.textContent = "";
+    errBox.classList.remove("is-active");
+  }
+
+  /* ---------------- loading an image ---------------- */
+
+  drop.addEventListener("dragover", function (e) {
+    e.preventDefault();
+    drop.classList.add("is-over");
+  });
+  drop.addEventListener("dragleave", function () { drop.classList.remove("is-over"); });
+  drop.addEventListener("drop", function (e) {
+    e.preventDefault();
+    drop.classList.remove("is-over");
+    if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) {
+      loadFile(e.dataTransfer.files[0]);
+    }
+  });
+
+  fileInput.addEventListener("change", function () {
+    if (fileInput.files && fileInput.files[0]) loadFile(fileInput.files[0]);
+  });
+
+  function loadFile(file) {
+    clearError();
+    if (!file.type || file.type.indexOf("image/") !== 0) {
+      showError("That file is not an image. Pick a JPG, PNG, WebP or HEIC photo.");
+      return;
+    }
+    var url = URL.createObjectURL(file);
+    var img = new Image();
+    img.onload = function () {
+      drawSource(img, img.naturalWidth, img.naturalHeight);
+      URL.revokeObjectURL(url);
+    };
+    img.onerror = function () {
+      URL.revokeObjectURL(url);
+      showError("This browser could not open that image. Try a JPG or PNG instead.");
+    };
+    img.src = url;
+  }
+
+  function drawSource(source, sw, sh) {
+    if (!sw || !sh) {
+      showError("That image appears to be empty. Try another photo.");
+      return;
+    }
+    var scale = Math.min(1, MAX_DIM / Math.max(sw, sh));
+    canvas.width = Math.max(1, Math.round(sw * scale));
+    canvas.height = Math.max(1, Math.round(sh * scale));
+    ctx.drawImage(source, 0, 0, canvas.width, canvas.height);
+
+    var minSide = Math.min(canvas.width, canvas.height);
+    sel.x = canvas.width / 2;
+    sel.y = canvas.height / 2;
+    sel.r = minSide * 0.16;
+    sizeInput.value = 16;
+
+    hasImage = true;
+    canvas.style.display = "block";
+    video.style.display = "none";
+    ring.style.display = "block";
+    shootBtn.hidden = true;
+    sizeControl.style.display = "";
+    analyzeBtn.hidden = false;
+    stageTitle.textContent = "Place the circle over one iris";
+    stageHint.textContent = "Drag to move it. Pinch, scroll, or use the slider to match the size of your iris. Keep the dashed inner circle over your pupil.";
+
+    pickStep.style.display = "none";
+    result.classList.remove("is-active");
+    stageWrap.classList.add("is-active");
+    positionRing();
+    stageWrap.scrollIntoView({ block: "nearest" });
+  }
+
+  /* ---------------- camera ---------------- */
+
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    camBtn.hidden = false;
+  }
+
+  camBtn.addEventListener("click", function () {
+    clearError();
+    navigator.mediaDevices.getUserMedia({
+      video: { facingMode: "user", width: { ideal: 1920 }, height: { ideal: 1080 } },
+      audio: false
+    }).then(function (s) {
+      stream = s;
+      video.srcObject = s;
+      video.play();
+      hasImage = false;
+      canvas.style.display = "none";
+      video.style.display = "block";
+      ring.style.display = "none";
+      sizeControl.style.display = "none";
+      analyzeBtn.hidden = true;
+      shootBtn.hidden = false;
+      stageTitle.textContent = "Line up your eye and capture";
+      stageHint.textContent = "Fill as much of the frame with one eye as you can, then capture. You place the circle in the next step.";
+      pickStep.style.display = "none";
+      result.classList.remove("is-active");
+      stageWrap.classList.add("is-active");
+    }).catch(function () {
+      showError("Could not open the camera. Check the camera permission for this site, or choose a photo instead.");
+    });
+  });
+
+  shootBtn.addEventListener("click", function () {
+    if (!stream) return;
+    var w = video.videoWidth, h = video.videoHeight;
+    drawSource(video, w, h);
+    stopCamera();
+  });
+
+  function stopCamera() {
+    if (!stream) return;
+    stream.getTracks().forEach(function (t) { t.stop(); });
+    stream = null;
+    video.srcObject = null;
+  }
+
+  /* ---------------- ring placement ---------------- */
+
+  function minR() { return Math.min(canvas.width, canvas.height) * 0.04; }
+  function maxR() { return Math.min(canvas.width, canvas.height) * 0.48; }
+
+  function clampSel() {
+    sel.r = Math.max(minR(), Math.min(maxR(), sel.r));
+    sel.x = Math.max(0, Math.min(canvas.width, sel.x));
+    sel.y = Math.max(0, Math.min(canvas.height, sel.y));
+  }
+
+  function positionRing() {
+    if (!canvas.width || !canvas.height) return;
+    clampSel();
+    ring.style.left = ((sel.x - sel.r) / canvas.width * 100) + "%";
+    ring.style.top = ((sel.y - sel.r) / canvas.height * 100) + "%";
+    ring.style.width = (sel.r * 2 / canvas.width * 100) + "%";
+    ring.style.height = (sel.r * 2 / canvas.height * 100) + "%";
+  }
+
+  function toCanvas(e) {
+    var rect = canvas.getBoundingClientRect();
+    if (!rect.width || !rect.height) return { x: 0, y: 0 };
+    return {
+      x: (e.clientX - rect.left) / rect.width * canvas.width,
+      y: (e.clientY - rect.top) / rect.height * canvas.height
+    };
+  }
+
+  var pointers = new Map();
+  var dragOffset = null;
+  var pinchStart = null;
+
+  stage.addEventListener("pointerdown", function (e) {
+    if (!hasImage) return;
+    stage.setPointerCapture(e.pointerId);
+    pointers.set(e.pointerId, toCanvas(e));
+
+    if (pointers.size === 1) {
+      var p = toCanvas(e);
+      dragOffset = { x: sel.x - p.x, y: sel.y - p.y };
+    } else if (pointers.size === 2) {
+      var pts = Array.from(pointers.values());
+      pinchStart = { dist: dist(pts[0], pts[1]), r: sel.r };
+      dragOffset = null;
+    }
+  });
+
+  stage.addEventListener("pointermove", function (e) {
+    if (!hasImage || !pointers.has(e.pointerId)) return;
+    e.preventDefault();
+    pointers.set(e.pointerId, toCanvas(e));
+
+    if (pointers.size >= 2 && pinchStart) {
+      var pts = Array.from(pointers.values());
+      var d = dist(pts[0], pts[1]);
+      if (pinchStart.dist > 0) {
+        sel.r = pinchStart.r * (d / pinchStart.dist);
+        clampSel();
+        syncSlider();
+        positionRing();
+      }
+    } else if (dragOffset) {
+      var p = toCanvas(e);
+      sel.x = p.x + dragOffset.x;
+      sel.y = p.y + dragOffset.y;
+      positionRing();
+    }
+  });
+
+  function endPointer(e) {
+    pointers.delete(e.pointerId);
+    if (pointers.size < 2) pinchStart = null;
+    if (pointers.size === 0) dragOffset = null;
+    if (pointers.size === 1) {
+      var p = Array.from(pointers.values())[0];
+      dragOffset = { x: sel.x - p.x, y: sel.y - p.y };
+    }
+  }
+  stage.addEventListener("pointerup", endPointer);
+  stage.addEventListener("pointercancel", endPointer);
+
+  stage.addEventListener("wheel", function (e) {
+    if (!hasImage) return;
+    e.preventDefault();
+    sel.r = sel.r * (1 - e.deltaY * 0.0015);
+    clampSel();
+    syncSlider();
+    positionRing();
+  }, { passive: false });
+
+  function syncSlider() {
+    var minSide = Math.min(canvas.width, canvas.height);
+    if (minSide > 0) sizeInput.value = (sel.r / minSide * 100).toFixed(1);
+  }
+
+  sizeInput.addEventListener("input", function () {
+    if (!hasImage) return;
+    var minSide = Math.min(canvas.width, canvas.height);
+    sel.r = minSide * (parseFloat(sizeInput.value) / 100);
+    positionRing();
+  });
+
+  window.addEventListener("resize", positionRing);
+
+  /* ---------------- the scan ---------------- */
+
+  function dist(a, b) {
+    var dx = a.x - b.x, dy = a.y - b.y;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+
+  analyzeBtn.addEventListener("click", function () {
+    if (!hasImage) return;
+    clearError();
+    analyzeBtn.disabled = true;
+    analyzeBtn.textContent = "Reading your iris\u2026";
+    // let the button state paint before the (synchronous) pixel work
+    setTimeout(function () {
+      try {
+        var reading = window.EyeScan.readIris(ctx, sel, canvas);
+        if (reading.ok) render(reading);
+        else showError(reading.error);
+      } catch (err) {
+        showError("Something went wrong reading that photo. Try another one.");
+      }
+      analyzeBtn.disabled = false;
+      analyzeBtn.textContent = "Scan my eye color";
+    }, 420);
+  });
+
+  /* ---------------- rendering ---------------- */
+
+  function render(reading) {
+    var fam = reading.info;
+    var pal = reading.palette;
+
+    $("rName").textContent = reading.shade;
+    $("rDesc").textContent = fam.blurb + " Roughly " + fam.share + " in 100 people share it.";
+    $("rFamily").textContent = fam.label;
+    $("rRarity").textContent = fam.rarer === null ? "Most common" : "Top " + fam.rarer + "%";
+    $("rConf").textContent = reading.confidence + "% match";
+
+    var iris = $("rIris");
+    iris.style.setProperty("--c1", pal[0] || "#6b4423");
+    iris.style.setProperty("--c2", pal[1] || pal[0] || "#7a4a26");
+    iris.style.setProperty("--c3", pal[2] || pal[0] || "#5b3a1e");
+
+    setBar("bMel", "vMel", reading.pigments.melanin);
+    setBar("bLip", "vLip", reading.pigments.lipochrome);
+    setBar("bStr", "vStr", reading.pigments.structural);
+
+    var paletteBox = $("rPalette");
+    paletteBox.textContent = "";
+    pal.forEach(function (hex) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "swatch";
+      btn.setAttribute("aria-label", "Copy " + hex);
+
+      var chip = document.createElement("span");
+      chip.className = "chip";
+      chip.style.background = hex;
+
+      var label = document.createElement("span");
+      label.className = "hex";
+      label.textContent = hex;
+
+      btn.appendChild(chip);
+      btn.appendChild(label);
+      btn.addEventListener("click", function () { copyHex(btn, label, hex); });
+      paletteBox.appendChild(btn);
+    });
+
+    stageWrap.classList.remove("is-active");
+    result.classList.add("is-active");
+    result.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function setBar(barId, valId, pct) {
+    $(valId).textContent = pct + "%";
+    var bar = $(barId);
+    bar.style.width = "0%";
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { bar.style.width = pct + "%"; });
+    });
+  }
+
+  function copyHex(btn, label, hex) {
+    var done = function () {
+      var previous = label.textContent;
+      label.textContent = "Copied";
+      btn.classList.add("copied");
+      setTimeout(function () {
+        label.textContent = previous === "Copied" ? hex : previous;
+        btn.classList.remove("copied");
+      }, 1100);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(hex).then(done).catch(function () {});
+    }
+  }
+
+  /* ---------------- reset ---------------- */
+
+  function reset() {
+    stopCamera();
+    clearError();
+    hasImage = false;
+    fileInput.value = "";
+    result.classList.remove("is-active");
+    stageWrap.classList.remove("is-active");
+    pickStep.style.display = "";
+    pickStep.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  resetBtn.addEventListener("click", reset);
+  againBtn.addEventListener("click", reset);
+})();
+</script>
+</body>
+</html>

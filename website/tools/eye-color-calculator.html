@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" class="tool-page">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eye Color Calculator: Punnett Square Baby Eye Color Predictor</title>
+<meta name="description" content="Free eye color calculator. Enter both parents, add grandparents, and see the odds of brown, hazel, green, and blue eyes for your child.">
+<link rel="canonical" href="https://eyecolorscanner.com/tools/eye-color-calculator.html">
+<meta name="theme-color" content="#fdfdfc">
+<link rel="icon" href="../assets/app-icon-180.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/app-icon-180.png">
+<link rel="stylesheet" href="../assets/style.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Eye Color Identifier">
+<meta property="og:title" content="Eye Color Calculator: Punnett Square Baby Eye Color Predictor">
+<meta property="og:description" content="Enter both parents, add grandparents for a three-generation estimate, and see the odds of brown, hazel, green, and blue eyes.">
+<meta property="og:url" content="https://eyecolorscanner.com/tools/eye-color-calculator.html">
+<meta property="og:image" content="https://eyecolorscanner.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eye Color Calculator: Punnett Square Baby Eye Color Predictor">
+<meta name="twitter:description" content="Enter both parents, add grandparents, and see the odds of brown, hazel, green, and blue eyes.">
+<meta name="twitter:image" content="https://eyecolorscanner.com/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://eyecolorscanner.com/tools/eye-color-calculator.html#tool",
+      "name": "Eye Color Calculator",
+      "url": "https://eyecolorscanner.com/tools/eye-color-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any browser",
+      "browserRequirements": "Requires JavaScript",
+      "description": "A free eye color calculator that estimates a child's chance of brown, hazel, green, and blue eyes from both parents' eye colors, with optional grandparents for a three-generation Punnett square estimate.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "isAccessibleForFree": true,
+      "publisher": { "@type": "Organization", "name": "Vejo Apps" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://eyecolorscanner.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://eyecolorscanner.com/tools/eye-color-scanner.html" },
+        { "@type": "ListItem", "position": 3, "name": "Eye color calculator", "item": "https://eyecolorscanner.com/tools/eye-color-calculator.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How accurate is an eye color calculator?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It gives realistic odds, not a prediction. This calculator uses the classic two-gene Punnett square model, which explains most outcomes but not all of them. Real eye color is shaped by dozens of genes, with OCA2 and HERC2 doing most of the work, so surprises are normal and no calculator can be certain." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can two brown-eyed parents have a blue-eyed baby?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. If both brown-eyed parents carry a recessive blue allele, roughly one in four of their children can have blue eyes. This is one of the most common surprises in eye color inheritance, and adding grandparents to the calculator shows it clearly: a blue-eyed grandparent proves the brown-eyed parent carries the allele." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do grandparents matter for eye color?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A brown-eyed parent can be carrying a hidden blue or green allele, and you cannot see which from their eyes alone. Grandparents reveal it: a parent with a blue-eyed mother or father must have inherited that recessive allele, which raises the chance of passing it on. That is why a three-generation estimate is sharper than a two-generation one." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can two blue-eyed parents have a brown-eyed child?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Under the simple two-gene model, no. In reality it is rare but documented, because other genes can add pigment. Treat a 0 percent result as very unlikely rather than impossible." }
+        },
+        {
+          "@type": "Question",
+          "name": "When does a baby's eye color settle?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Many babies are born with lighter eyes because melanin is still being deposited in the iris. Most of the change happens in the first six to nine months, and eye color is usually settled by around age three, though small shifts can continue for longer." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../">
+      <img src="../assets/app-icon-180.webp" alt="Eye Color Identifier app icon" width="30" height="30">
+      Eye Color Identifier
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="eye-color-scanner.html" class="nav-hide-sm">Scanner</a>
+      <a href="../#guides" class="nav-hide-sm">Guides</a>
+      <a href="../#faq" class="nav-hide-sm">FAQ</a>
+      <a class="btn-nav" href="https://apps.apple.com/app/id6752604522">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="../">Home</a></li>
+    <li>Tools</li>
+    <li aria-current="page">Eye color calculator</li>
+  </ol>
+</nav>
+
+<div class="tool-intro">
+  <p class="eyebrow">Free online tool</p>
+  <h1>Eye color calculator: what color eyes will my baby have?</h1>
+  <p class="lede">Pick both parents' eye colors and see the odds for brown, hazel, green, and blue. Add grandparents and the estimate sharpens, because a blue-eyed grandparent reveals a recessive allele that a parent's own eyes keep hidden.</p>
+</div>
+
+<div class="tool-shell">
+  <div class="tool-panel">
+
+    <span class="tool-step-label">The parents</span>
+    <h2>Start with mum and dad</h2>
+    <p class="tool-hint">The odds update as you choose. Amber counts as a brown-family color and gray as a blue-family color.</p>
+
+    <div class="calc-parents">
+      <div class="calc-field">
+        <label for="mother">Mother's eye color</label>
+        <select id="mother">
+          <option value="brown" selected>Brown</option>
+          <option value="hazel">Hazel</option>
+          <option value="amber">Amber</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="gray">Gray</option>
+        </select>
+      </div>
+      <div class="calc-field">
+        <label for="father">Father's eye color</label>
+        <select id="father">
+          <option value="brown">Brown</option>
+          <option value="hazel">Hazel</option>
+          <option value="amber">Amber</option>
+          <option value="green">Green</option>
+          <option value="blue" selected>Blue</option>
+          <option value="gray">Gray</option>
+        </select>
+      </div>
+    </div>
+
+    <details class="grandparents" id="gpBox">
+      <summary>Add grandparents for a three-generation estimate</summary>
+      <p class="gp-note">Leave anyone you are unsure about on "Not sure". Even one known grandparent sharpens the result.</p>
+      <div class="gp-grid">
+        <div class="calc-field">
+          <label for="mgm">Mother's mother</label>
+          <select id="mgm" class="gp">
+            <option value="unknown" selected>Not sure</option>
+            <option value="brown">Brown</option>
+            <option value="hazel">Hazel</option>
+            <option value="amber">Amber</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="gray">Gray</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label for="mgf">Mother's father</label>
+          <select id="mgf" class="gp">
+            <option value="unknown" selected>Not sure</option>
+            <option value="brown">Brown</option>
+            <option value="hazel">Hazel</option>
+            <option value="amber">Amber</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="gray">Gray</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label for="fgm">Father's mother</label>
+          <select id="fgm" class="gp">
+            <option value="unknown" selected>Not sure</option>
+            <option value="brown">Brown</option>
+            <option value="hazel">Hazel</option>
+            <option value="amber">Amber</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="gray">Gray</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label for="fgf">Father's father</label>
+          <select id="fgf" class="gp">
+            <option value="unknown" selected>Not sure</option>
+            <option value="brown">Brown</option>
+            <option value="hazel">Hazel</option>
+            <option value="amber">Amber</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="gray">Gray</option>
+          </select>
+        </div>
+      </div>
+    </details>
+
+    <hr style="border:0;border-top:1px solid var(--line);margin:28px 0">
+
+    <span class="tool-step-label">The odds</span>
+    <h2 id="oddsTitle">Your child's likely eye color</h2>
+    <p class="tool-hint" id="oddsLede">&nbsp;</p>
+
+    <div class="odds" id="odds">
+      <div class="odds-row">
+        <span class="iris brown" aria-hidden="true"></span>
+        <div class="odds-body">
+          <div class="odds-top"><span class="name">Brown</span><span class="pct" id="pBrown">0%</span></div>
+          <div class="odds-track"><div class="odds-fill brown" id="fBrown"></div></div>
+        </div>
+      </div>
+      <div class="odds-row">
+        <span class="iris hazel" aria-hidden="true"></span>
+        <div class="odds-body">
+          <div class="odds-top"><span class="name">Hazel</span><span class="pct" id="pHazel">0%</span></div>
+          <div class="odds-track"><div class="odds-fill hazel" id="fHazel"></div></div>
+        </div>
+      </div>
+      <div class="odds-row">
+        <span class="iris green" aria-hidden="true"></span>
+        <div class="odds-body">
+          <div class="odds-top"><span class="name">Green</span><span class="pct" id="pGreen">0%</span></div>
+          <div class="odds-track"><div class="odds-fill green" id="fGreen"></div></div>
+        </div>
+      </div>
+      <div class="odds-row">
+        <span class="iris blue" aria-hidden="true"></span>
+        <div class="odds-body">
+          <div class="odds-top"><span class="name">Blue</span><span class="pct" id="pBlue">0%</span></div>
+          <div class="odds-track"><div class="odds-fill blue" id="fBlue"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="disclaimer" style="margin-top:22px">These are odds from a simplified two-gene model, not a prediction. Real eye color is shaped by dozens of genes, so an outcome the calculator puts at a few percent still happens to real families every day. Gray falls in the blue family and amber in the brown family.</p>
+  </div>
+
+  <noscript>
+    <p class="disclaimer" style="margin-top:16px">The calculator needs JavaScript. You can still read <a href="../guides/baby-eye-color-predictor.html">how eye color inheritance works</a> without it.</p>
+  </noscript>
+
+  <div class="app-tiein" style="margin-top:30px">
+    <img class="icon" src="../assets/app-icon-180.webp" alt="Eye Color Identifier app icon" width="62" height="62" loading="lazy">
+    <div class="txt">
+      <h3>Not sure what color your own eyes are?</h3>
+      <p>Scan them first. The free Eye Color Identifier app names your exact shade, and its Circle feature saves your whole family's eye colors so you can compare and predict from real scans.</p>
+    </div>
+    <a class="btn-nav" href="https://apps.apple.com/app/id6752604522">Download free</a>
+  </div>
+</div>
+
+<article class="guide">
+  <h2>How this eye color calculator works</h2>
+  <p>The calculator uses the classic two-gene Punnett square model that geneticists use to teach eye color inheritance. It is a simplification, but it is the simplification that explains the majority of real families.</p>
+  <ul>
+    <li><strong>Gene 1 decides brown or not brown.</strong> The brown allele (B) is dominant. One copy is enough for a brown-family eye.</li>
+    <li><strong>Gene 2 decides green or blue</strong> among people who did not get a brown allele. The green allele (G) is dominant over blue.</li>
+    <li><strong>Blue is the recessive floor.</strong> Blue eyes need two non-brown alleles on gene 1 and two non-green alleles on gene 2, which is why blue can skip generations and reappear.</li>
+    <li><strong>Hazel sits between brown and green,</strong> so the calculator splits it out of the brown-family outcomes where a green allele is also present.</li>
+  </ul>
+
+  <h2>Why adding grandparents changes the answer</h2>
+  <p>A brown-eyed parent can be one of two things: carrying two brown alleles, or carrying one brown and one hidden recessive. Their eyes look identical either way, so a two-generation calculator has to guess with population averages.</p>
+  <p>Grandparents remove the guess. If a brown-eyed mother has a blue-eyed father, she must have inherited a recessive allele from him, so she is definitely a carrier. The calculator applies exactly that logic: it works out what each parent could have inherited from their own parents, then keeps only the combinations that match the parent's actual eye color. Try it with two brown-eyed parents and watch the blue percentage jump when you add a blue-eyed grandparent.</p>
+
+  <h2>Can two brown-eyed parents have a blue-eyed baby?</h2>
+  <p>Yes, and it is the most common surprise in eye color inheritance. If both parents carry a hidden recessive allele, roughly one in four of their children can have blue eyes. The reverse case, two blue-eyed parents having a brown-eyed child, is genuinely rare but documented, because genes outside this simple model can still add pigment. That is why you should read a 0 percent result as "very unlikely", never as "impossible".</p>
+
+  <h2>When does a baby's eye color settle?</h2>
+  <p>Many babies are born with lighter eyes than they will end up with, because melanin is still being deposited in the iris after birth. Most of the change happens in the first six to nine months, and eye color is usually settled by around age three. A baby whose eyes are still bright blue at nine months will probably keep blue eyes; one whose eyes are darkening early is often heading for green, hazel, or brown. The full story is in our <a href="../guides/baby-eye-color-predictor.html">guide to baby eye color</a>.</p>
+
+  <div class="tool-tiein">
+    <span class="tt-eye" aria-hidden="true"></span>
+    <div class="tt-txt">
+      <h3>First, be sure of the parents' eye colors</h3>
+      <p>Hazel and green get mixed up constantly, and that changes the odds. Scan a photo with the free online eye color scanner to settle it in seconds.</p>
+    </div>
+    <a class="btn" href="eye-color-scanner.html">Open the scanner</a>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <h3>How accurate is an eye color calculator?</h3>
+  <p>It gives realistic odds, not a prediction. Dozens of genes shape eye color, with OCA2 and HERC2 doing most of the work, so surprises are normal.</p>
+  <h3>Can two brown-eyed parents have a blue-eyed baby?</h3>
+  <p>Yes. If both carry a recessive blue allele, roughly one in four of their children can have blue eyes.</p>
+  <h3>Why do grandparents matter?</h3>
+  <p>Because they reveal recessive alleles a parent's own eyes hide. A blue-eyed grandparent proves a brown-eyed parent is a carrier.</p>
+  <h3>Can two blue-eyed parents have a brown-eyed child?</h3>
+  <p>Under this model, no. In reality it is rare but documented, so treat 0 percent as very unlikely rather than impossible.</p>
+  <h3>When does a baby's eye color settle?</h3>
+  <p>Most change happens in the first six to nine months, and eye color is usually settled by around age three.</p>
+
+  <div class="sources">
+    <h2>Sources</h2>
+    <ul>
+      <li>MedlinePlus Genetics, <a href="https://medlineplus.gov/genetics/understanding/traits/eyecolor/" rel="noopener">Is eye color determined by genetics?</a></li>
+      <li>American Academy of Ophthalmology, <a href="https://www.aao.org/eye-health/tips-prevention/your-blue-eyes-arent-really-blue" rel="noopener">Your blue eyes aren't really blue</a></li>
+    </ul>
+  </div>
+</article>
+
+<aside class="related">
+  <h2>Keep exploring</h2>
+  <div class="grid grid-3">
+    <a class="guide-card" href="../guides/baby-eye-color-predictor.html">
+      <span class="kicker">Genetics</span>
+      <h3>What color eyes will my baby have?</h3>
+      <p>How inheritance really works, and why surprises happen.</p>
+    </a>
+    <a class="guide-card" href="eye-color-scanner.html">
+      <span class="kicker">Tool</span>
+      <h3>Online eye color scanner</h3>
+      <p>Read your exact shade from a photo, free.</p>
+    </a>
+    <a class="guide-card" href="../guides/eye-color-chart.html">
+      <span class="kicker">Reference</span>
+      <h3>Eye color chart</h3>
+      <p>Every family and shade with global percentages.</p>
+    </a>
+  </div>
+</aside>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="../">
+          <img src="../assets/app-icon-180.webp" alt="" width="30" height="30" loading="lazy">
+          Eye Color Identifier
+        </a>
+        <p style="margin-top:12px;max-width:34em">Scan your iris, name your exact eye color, and see how rare it is. Free online and on iPhone.</p>
+      </div>
+      <div>
+        <h4>Free tools</h4>
+        <ul>
+          <li><a href="eye-color-scanner.html">Eye color scanner</a></li>
+          <li><a href="eye-color-calculator.html">Eye color calculator</a></li>
+        </ul>
+        <h4 style="margin-top:20px">Guides</h4>
+        <ul>
+          <li><a href="../guides/what-color-are-my-eyes.html">What color are my eyes?</a></li>
+          <li><a href="../guides/rare-eye-colors.html">Rare eye colors</a></li>
+          <li><a href="../guides/hazel-vs-green-eyes.html">Hazel vs green eyes</a></li>
+          <li><a href="../guides/eye-color-chart.html">Eye color chart</a></li>
+          <li><a href="../guides/baby-eye-color-predictor.html">Baby eye color predictor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>App</h4>
+        <ul>
+          <li><a href="https://apps.apple.com/app/id6752604522">Download on the App Store</a></li>
+          <li><a href="https://www.vejoapps.com/terms">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">© 2026 Patrick van der Ploeg · Vejo Apps. Apple, the Apple logo, and App Store are trademarks of Apple Inc. Eye Color Identifier is a lifestyle app and does not provide medical advice.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  /* ------------------------------------------------------------------
+     Two-gene Punnett model.
+       Gene A: B (brown) dominant over b
+       Gene G: G (green) dominant over g
+       B present            -> brown family (brown or hazel)
+       bb + G present       -> green
+       bb + gg              -> blue
+     Genotypes are carried as probability distributions so grandparents
+     can constrain a parent instead of us guessing from population odds.
+     ------------------------------------------------------------------ */
+
+  // P(observed phenotype | genotype). Rows: A genotype has B or not; G genotype has G or not.
+  var LIKELIHOOD = {
+    brown: { BG: 0.58, Bg: 1.00, bG: 0, bg: 0 },
+    hazel: { BG: 0.42, Bg: 0.10, bG: 0.06, bg: 0 },
+    amber: { BG: 0.16, Bg: 0.42, bG: 0, bg: 0 },
+    green: { BG: 0, Bg: 0, bG: 1.00, bg: 0 },
+    blue:  { BG: 0, Bg: 0, bG: 0, bg: 1.00 },
+    gray:  { BG: 0, Bg: 0, bG: 0, bg: 1.00 }
+  };
+
+  // Population priors for an unknown person.
+  var PRIOR_A = { BB: 0.42, Bb: 0.34, bb: 0.24 };
+  var PRIOR_G = { GG: 0.04, Gg: 0.26, gg: 0.70 };
+
+  function alleleFreq(distA) {
+    return distA.BB + distA.Bb / 2;   // P(dominant allele passed on)
+  }
+
+  // Offspring genotype distribution from two parent genotype distributions.
+  function cross(d1, d2, dom, het, rec) {
+    var p1 = d1[dom] + d1[het] / 2;
+    var p2 = d2[dom] + d2[het] / 2;
+    var out = {};
+    out[dom] = p1 * p2;
+    out[het] = p1 * (1 - p2) + (1 - p1) * p2;
+    out[rec] = (1 - p1) * (1 - p2);
+    return out;
+  }
+
+  // Given a genotype prior and an observed phenotype, return the conditioned
+  // joint distribution over (gene A, gene G).
+  function condition(distA, distG, phenotype) {
+    var lk = LIKELIHOOD[phenotype];
+    var joint = [];
+    var total = 0;
+
+    ["BB", "Bb", "bb"].forEach(function (a) {
+      ["GG", "Gg", "gg"].forEach(function (g) {
+        var hasB = a !== "bb";
+        var hasG = g !== "gg";
+        var key = (hasB ? "B" : "b") + (hasG ? "G" : "g");
+        var p = distA[a] * distG[g] * lk[key];
+        if (p > 0) { joint.push({ a: a, g: g, p: p }); total += p; }
+      });
+    });
+
+    if (total <= 0) return null;   // impossible combination
+
+    var outA = { BB: 0, Bb: 0, bb: 0 };
+    var outG = { GG: 0, Gg: 0, gg: 0 };
+    joint.forEach(function (c) {
+      var p = c.p / total;
+      outA[c.a] += p;
+      outG[c.g] += p;
+    });
+    return { A: outA, G: outG };
+  }
+
+  // A person's genotype distribution, optionally constrained by their parents.
+  function person(phenotype, gp1, gp2) {
+    var priorA = PRIOR_A, priorG = PRIOR_G;
+
+    if (gp1 || gp2) {
+      var d1 = gp1 || { A: PRIOR_A, G: PRIOR_G };
+      var d2 = gp2 || { A: PRIOR_A, G: PRIOR_G };
+      priorA = cross(d1.A, d2.A, "BB", "Bb", "bb");
+      priorG = cross(d1.G, d2.G, "GG", "Gg", "gg");
+    }
+
+    var conditioned = condition(priorA, priorG, phenotype);
+    if (conditioned) return conditioned;
+
+    // Grandparents contradict the parent's own eye color (someone misremembered,
+    // or a gene outside this model is at work). Fall back to population priors.
+    return condition(PRIOR_A, PRIOR_G, phenotype);
+  }
+
+  // The two-gene model has no hazel gene, so hazel has to be split out of the
+  // brown-family group. How much hazel to expect tracks the parents: two hazel
+  // parents produce far more hazel children than two brown-eyed ones.
+  var HAZELNESS = { hazel: 1, amber: 0.35, green: 0.30, brown: 0.15, blue: 0, gray: 0 };
+
+  function childOdds(p1, p2, bias) {
+    var childA = cross(p1.A, p2.A, "BB", "Bb", "bb");
+    var childG = cross(p1.G, p2.G, "GG", "Gg", "gg");
+
+    var pB = 1 - childA.bb;          // has at least one brown allele
+    var pG = 1 - childG.gg;          // has at least one green allele
+
+    var BG = pB * pG, Bg = pB * (1 - pG);
+    var bG = (1 - pB) * pG, bg = (1 - pB) * (1 - pG);
+
+    // Split each genotype group across the visible colors.
+    var hazelBG = 0.35 + 0.35 * bias;
+    var hazelBg = 0.06 + 0.14 * bias;
+
+    var brown = BG * (1 - hazelBG) + Bg * (1 - hazelBg);
+    var hazel = BG * hazelBG + Bg * hazelBg + bG * 0.08;
+    var green = bG * 0.92;
+    var blue  = bg;
+
+    var total = brown + hazel + green + blue;
+    return {
+      brown: brown / total * 100,
+      hazel: hazel / total * 100,
+      green: green / total * 100,
+      blue: blue / total * 100
+    };
+  }
+
+  /* ---------------- wiring ---------------- */
+
+  var mother = $("mother"), father = $("father");
+  var mgm = $("mgm"), mgf = $("mgf"), fgm = $("fgm"), fgf = $("fgf");
+
+  function grandparent(select) {
+    if (select.value === "unknown") return null;
+    return condition(PRIOR_A, PRIOR_G, select.value);
+  }
+
+  function roundTo100(odds) {
+    var keys = ["brown", "hazel", "green", "blue"];
+    var rounded = {};
+    var sum = 0;
+    keys.forEach(function (k) { rounded[k] = Math.round(odds[k]); sum += rounded[k]; });
+    if (sum !== 100) {
+      // give the rounding remainder to the largest bucket
+      var biggest = keys.reduce(function (a, b) { return odds[a] >= odds[b] ? a : b; });
+      rounded[biggest] += 100 - sum;
+    }
+    return rounded;
+  }
+
+  function summarise(r, motherColor, fatherColor) {
+    var keys = ["brown", "hazel", "green", "blue"];
+    var top = keys.reduce(function (a, b) { return r[a] >= r[b] ? a : b; });
+    var names = { brown: "brown", hazel: "hazel", green: "green", blue: "blue" };
+
+    var line = "Most likely: " + names[top] + " eyes, at about " + r[top] + "%.";
+    if (motherColor === "brown" && fatherColor === "brown" && r.blue >= 5) {
+      line += " Two brown-eyed parents can still have a blue-eyed child when both carry the recessive allele.";
+    } else if (r.blue === 0) {
+      line += " Blue is very unlikely here, because at least one parent almost certainly passes on a dominant allele.";
+    } else if (r.hazel >= 20 && r.green >= 15) {
+      line += " Hazel and green are close together, and the two are easy to confuse in real life.";
+    }
+    return line;
+  }
+
+  function update() {
+    var mDist = person(mother.value, grandparent(mgm), grandparent(mgf));
+    var fDist = person(father.value, grandparent(fgm), grandparent(fgf));
+    var bias = (HAZELNESS[mother.value] + HAZELNESS[father.value]) / 2;
+    var r = roundTo100(childOdds(mDist, fDist, bias));
+
+    setOdds("Brown", r.brown);
+    setOdds("Hazel", r.hazel);
+    setOdds("Green", r.green);
+    setOdds("Blue", r.blue);
+
+    $("oddsLede").textContent = summarise(r, mother.value, father.value);
+  }
+
+  function setOdds(name, pct) {
+    $("p" + name).textContent = pct + "%";
+    $("f" + name).style.width = pct + "%";
+  }
+
+  [mother, father, mgm, mgf, fgm, fgf].forEach(function (el) {
+    el.addEventListener("change", update);
+  });
+
+  update();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Scan test</title>
+<style>body{font:13px ui-monospace,monospace;padding:16px}td,th{padding:3px 9px;border-bottom:1px solid #ddd;text-align:left}
+.ok{color:#0a7d2e;font-weight:700}.bad{color:#c00;font-weight:700}</style>
+</head>
+<body>
+<h1 id="h">running…</h1>
+<table id="t"><thead><tr><th>image</th><th>placement</th><th>expected</th><th>got</th><th>shade</th><th>pigments M/L/S</th><th>conf</th><th>palette</th></tr></thead><tbody></tbody></table>
+<script src="/website/assets/eye-scan.js"></script>
+<script>
+var CASES = [
+  ["eye-blue.jpg",  "blue"],
+  ["eye-brown.jpg", "brown"],
+  ["eye-green.jpg", "green"],
+  ["eye-hazel.jpg", "hazel"],
+  ["eye-gray.jpg",  "gray"],
+  ["eye-amber.jpg", "amber"]
+];
+// how the user might place the circle: perfect, a bit small, a bit off-centre, a bit large
+var PLACEMENTS = [
+  ["exact",      350, 350, 210],
+  ["small 0.8x", 350, 350, 168],
+  ["off 25px",   375, 332, 210],
+  ["large 1.15x",350, 350, 241]
+];
+
+var tbody = document.querySelector("#t tbody");
+var pass = 0, total = 0;
+
+function loadImg(src) {
+  return new Promise(function (res, rej) {
+    var i = new Image();
+    i.onload = function () { res(i); };
+    i.onerror = rej;
+    i.src = "/test/" + src;
+  });
+}
+
+Promise.all(CASES.map(function (c) { return loadImg(c[0]); })).then(function (imgs) {
+  imgs.forEach(function (img, idx) {
+    var name = CASES[idx][0], expected = CASES[idx][1];
+    var cv = document.createElement("canvas");
+    cv.width = img.naturalWidth; cv.height = img.naturalHeight;
+    var ctx = cv.getContext("2d", { willReadFrequently: true });
+    ctx.drawImage(img, 0, 0);
+
+    PLACEMENTS.forEach(function (p) {
+      total++;
+      var r = window.EyeScan.readIris(ctx, { x: p[1], y: p[2], r: p[3] }, cv);
+      var tr = document.createElement("tr");
+      var got = r.ok ? r.family : ("ERROR: " + r.error);
+      var good = r.ok && r.family === expected;
+      if (good) pass++;
+      tr.innerHTML = "<td>" + name + "</td><td>" + p[0] + "</td><td>" + expected +
+        "</td><td class='" + (good ? "ok" : "bad") + "'>" + got + "</td>" +
+        "<td>" + (r.ok ? r.shade : "-") + "</td>" +
+        "<td>" + (r.ok ? r.pigments.melanin + "/" + r.pigments.lipochrome + "/" + r.pigments.structural : "-") + "</td>" +
+        "<td>" + (r.ok ? r.confidence + "%" : "-") + "</td>" +
+        "<td>" + (r.ok ? r.palette.join(" ") : "-") + "</td>";
+      tbody.appendChild(tr);
+    });
+  });
+  document.getElementById("h").textContent = "RESULT " + pass + "/" + total + " correct family";
+}).catch(function (e) {
+  document.getElementById("h").textContent = "LOAD FAILED: " + e;
+});
+</script>
+</body>
+</html>
