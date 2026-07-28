@@ -58,28 +58,70 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   -webkit-backdrop-filter: saturate(1.6) blur(14px);
   border-bottom: 1px solid var(--line);
 }
+/* Three zones: brand left, page title (or nav) centred, action right.
+   On a phone the button is ~110px and the brand is a 30px icon, so a truly
+   page-centred title would have to ellipse away to nothing. There, the title
+   simply fills the gap between the two and centres inside it. From 720px up
+   there is room to spare, so both side zones take equal space (flex: 1 1 0)
+   and the title lands dead centre. Neither side carries min-width: 0, so the
+   title is always the first thing to give. */
 .site-header .wrap {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 10px;
   height: 60px;
 }
 .brand {
+  flex: none;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 10px;
+  min-width: 0;
   font-weight: 700;
   color: var(--ink);
   font-size: 1rem;
   letter-spacing: -0.01em;
 }
 .brand:hover { text-decoration: none; }
-.brand img { width: 30px; height: 30px; border-radius: 8px; }
-.site-nav { margin-left: auto; display: flex; align-items: center; gap: 22px; }
-.site-nav a { color: var(--ink-soft); font-size: 0.95rem; font-weight: 500; }
+.brand img { width: 30px; height: 30px; border-radius: 8px; flex: none; }
+.brand-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Centre slot */
+.header-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-nav {
+  flex: 1 1 auto;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  min-width: 0;
+}
+.site-nav a { color: var(--ink-soft); font-size: 0.95rem; font-weight: 500; white-space: nowrap; }
 .site-nav a:hover { color: var(--ink); text-decoration: none; }
-.nav-hide-sm { display: none; }
-@media (min-width: 720px) { .nav-hide-sm { display: inline; } }
+
+.header-actions { flex: none; display: flex; align-items: center; justify-content: flex-end; }
+
+@media (min-width: 720px) {
+  .header-title { font-size: 1rem; flex: 0 1 auto; }
+  .site-nav { flex: 0 1 auto; }
+  .brand, .header-actions { flex: 1 1 0; }
+}
+@media (min-width: 860px) { .site-nav { display: flex; } }
+
 .btn-nav {
   background: var(--scan-blue);
   color: #fff !important;
@@ -87,8 +129,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   border-radius: 999px;
   font-weight: 600;
   font-size: 0.9rem !important;
+  white-space: nowrap;
 }
 .btn-nav:hover { background: var(--scan-blue-dark); text-decoration: none; }
+
+/* Below this the brand name would crowd the centred title off the row */
+@media (max-width: 639px) {
+  .site-header .brand-name { display: none; }
+  .site-header .btn-nav { padding: 8px 14px; font-size: 0.85rem !important; }
+}
+/* iPhone SE and similar: buy back just enough width for the longest titles */
+@media (max-width: 360px) {
+  .header-title { font-size: 0.85rem; }
+  .site-header .btn-nav { padding: 8px 12px; font-size: 0.82rem !important; }
+}
 
 /* ---------- Hero ---------- */
 .hero { position: relative; overflow: hidden; }
@@ -228,7 +282,11 @@ h2 {
 .step p { color: var(--ink-soft); font-size: 0.97rem; }
 
 /* ---------- Iris swatches ---------- */
+/* display:block matters: .iris is a <span>, and an inline element ignores
+   width, height and aspect-ratio, so it collapses to nothing outside a
+   flex or grid parent. */
 .iris {
+  display: block;
   --c1: #6b4423; --c2: #7a4a26; --c3: #5b3a1e;
   width: 58px;
   aspect-ratio: 1;
@@ -503,11 +561,13 @@ article.guide .table-scroll { overflow-x: auto; }
 .btn-ghost { background: #fff; color: var(--ink); border-color: var(--line); }
 .btn-ghost:hover { background: var(--mist); color: var(--ink); border-color: #cdd6e0; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn-row.centre { justify-content: center; }
 .btn-row .btn { flex: 1 1 auto; }
 @media (min-width: 560px) { .btn-row .btn { flex: 0 0 auto; } }
 
 /* Drop zone */
 .dropzone {
+  display: block;              /* it is a <label>, so inline by default */
   border: 2px dashed #c9d4e0;
   border-radius: 20px;
   background: linear-gradient(180deg, #fbfcfe 0%, #f4f7fa 100%);
@@ -518,6 +578,7 @@ article.guide .table-scroll { overflow-x: auto; }
 }
 .dropzone:hover, .dropzone.is-over { border-color: var(--scan-blue); background: #eef4ff; }
 .dropzone .dz-eye {
+  display: block;
   width: 62px;
   height: 62px;
   margin: 0 auto 14px;
